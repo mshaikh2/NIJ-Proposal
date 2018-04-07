@@ -1,0 +1,99 @@
+%  article.tex (Version 2.81, released 24 September 2003)
+%  Article to demonstrate format for SPIE Proceedings
+%  Special instructions are included in this file after the
+%  symbol %>>>>
+%  Numerous commands are commented out, but included to show how
+%  to effect various options, e.g., to print page numbers, etc.
+%  This LaTeX source file is composed for LaTeX2e, 
+%  not the older LaTeX version 2.09, as previous versions were.
+
+%  The following commands have been added in the SPIE class 
+%  file (spie.cls) and will not be understood in other classes:
+%  \supit{}, \authorinfo{}, \skiplinehalf, \keywords{}
+%  The bibliography style file is called spiebib.bst, 
+%  which replaces the standard style unstr.bst.  
+
+\documentclass[11pt, singlespacing]{article}  %>>> use for US letter paper
+%%\documentclass[a4paper]{spie}  %>>> use this instead for A4 paper
+%% \addtolength{\voffset}{9mm}   %>>> moves text field down
+
+%  The following command loads a graphics package to include images 
+%  in the document. It may be necessary to specify a DVI driver option,
+%  e.g., [dvips], but that may be inappropriate for some LaTeX 
+%  installations. 
+%\usepackage[]{graphicx}
+%\usepackage{subfigure}
+\usepackage{epsfig}
+\usepackage{subfigure}
+%%\usepackage{times}
+%%\usepackage{amssymb,amsmath,amsthm}
+%\usepackage[usenames]{color}
+\usepackage{graphicx}
+%\usepackage{floatflt}
+%\usepackage{amsmath}
+%
+\usepackage{setspace} %for double spacing and single spacing the document
+%\usepackage{amstex}
+\usepackage{amsmath}
+\usepackage{hyperref}
+\usepackage{url}
+
+\setlength{\oddsidemargin}{0in}  
+\setlength{\textwidth}{6.5in}  
+\setlength{\textheight}{8.8in}  
+\setlength{\topmargin}{0in}  
+\setlength{\headheight}{0in}  
+\setlength{\headsep}{0in} 
+\renewcommand{\thesubsection}{(\alph{subsection})}
+
+
+
+\begin{document}
+%\bibliographystyle{plain}
+%\pagestyle{fancy}
+%\fancyhead[L,C]{} %could be RO for right 
+%\fancyhead[R]{}
+\pagenumbering{roman}
+
+
+\section*{RI: Small: Deep Learning in Forensic Impression Evidence Comparison}
+\begin{verbatim}
+Sargur N. Srihari, University at Buffalo, The State University of New York
+\end{verbatim}
+%\singlespace
+\subsection*{Data Management Plan}
+
+During the course of this project several types of data will be produced. Plans for management and sharing of the data and products of research are given below. 
+\subsection{Artificially generated data}
+Some of the data for the project will be artificially generated. These will be made available on a public website.  Other data sets used in this research were developed previously under NIJ funding, which are also available at NIJ websites.
+
+The  proposal has described previous software for handwriting comparison that is based on a generative model. The code is available at:\\
+ \url{http://www.cedar.buffalo.edu/~grball/cedarfox-20150131-noe.zip}\\
+The code to be developed under the proposed project will also be developed for use by forensic examiners.
+\subsection{Machine learning On-line Lectures}
+Comprehensive lecture slides on machine learning, including deep learning, are already available on the web at\\
+\url{ http://www.cedar.buffalo.edu/~ srihari/CSE574}. \\
+Research on this project will allow updating the slides on deep learning.\subsection{Research Papers}
+Research results will be made known to the research community  through publications at peer-reviewed conferences and journals.
+\subsection{Intellectual Property}
+Intellectual property developed on the campus such as patents are subject to standard US university guidelines.
+
+%\footnotesize Proposals must include a supplementary document of no more than two pages labeled “Data Management Plan”. This supplement should describe how the proposal will conform to NSF policy on the dissemination and sharing of research results (see AAG Chapter VI.D.4), and may include:
+%
+%    the types of data, samples, physical collections, software, curriculum materials, and other materials to be produced in the course of the project;
+%
+%    the standards to be used for data and metadata format and content (where existing standards are absent or deemed inadequate, this should be documented along with any proposed solutions or remedies);
+%
+%    policies for access and sharing including provisions for appropriate protection of privacy, confidentiality, security, intellectual property, or other rights or requirements;
+%
+%    policies and provisions for re-use, re-distribution, and the production of derivatives; and
+%
+%    plans for archiving data, samples, and other research products, and for preservation of access to them.
+%
+%Data management requirements and plans specific to the Directorate, Office, Division, Program, or other NSF unit, relevant to a proposal are available at: http://www.nsf.gov/bfa/dias/policy/dmp.jsp. If guidance specific to the program is not available, then the requirements established in this section apply.
+%
+%Simultaneously submitted collaborative proposals and proposals that include subawards are a single unified project and should include only one supplemental combined Data Management Plan, regardless of the number of non-lead collaborative proposals or subawards included. Fastlane will not permit submission of a proposal that is missing a Data Management Plan. Proposals for supplementary support to an existing award are not required to include a Data Management Plan.
+%
+%A valid Data Management Plan may include only the statement that no detailed plan is needed, as long as the statement is accompanied by a clear justification. Proposers who feel that the plan cannot fit within the supplement limit of two pages may use part of the 15-page Project Description for additional data management information. Proposers are advised that the Data Management Plan may not be used to circumvent the 15-page Project Description limitation. The Data Management Plan will be reviewed as an integral part of the proposal, coming under Intellectual Merit or Broader Impacts or both, as appropriate for the scientific community of relevance.  
+ 
+\end{document}

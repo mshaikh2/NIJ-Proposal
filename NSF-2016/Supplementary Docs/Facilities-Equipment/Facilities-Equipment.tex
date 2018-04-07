@@ -1,0 +1,86 @@
+%  article.tex (Version 2.81, released 24 September 2003)
+%  Article to demonstrate format for SPIE Proceedings
+%  Special instructions are included in this file after the
+%  symbol %>>>>
+%  Numerous commands are commented out, but included to show how
+%  to effect various options, e.g., to print page numbers, etc.
+%  This LaTeX source file is composed for LaTeX2e, 
+%  not the older LaTeX version 2.09, as previous versions were.
+
+%  The following commands have been added in the SPIE class 
+%  file (spie.cls) and will not be understood in other classes:
+%  \supit{}, \authorinfo{}, \skiplinehalf, \keywords{}
+%  The bibliography style file is called spiebib.bst, 
+%  which replaces the standard style unstr.bst.  
+
+\documentclass[11pt, singlespacing]{article}  %>>> use for US letter paper
+%%\documentclass[a4paper]{spie}  %>>> use this instead for A4 paper
+%% \addtolength{\voffset}{9mm}   %>>> moves text field down
+
+%  The following command loads a graphics package to include images 
+%  in the document. It may be necessary to specify a DVI driver option,
+%  e.g., [dvips], but that may be inappropriate for some LaTeX 
+%  installations. 
+%\usepackage[]{graphicx}
+%\usepackage{subfigure}
+\usepackage{epsfig}
+\usepackage{subfigure}
+%%\usepackage{times}
+%%\usepackage{amssymb,amsmath,amsthm}
+%\usepackage[usenames]{color}
+\usepackage{graphicx}
+%\usepackage{floatflt}
+%\usepackage{amsmath}
+%
+\usepackage{setspace} %for double spacing and single spacing the document
+%\usepackage{amstex}
+\usepackage{amsmath}
+\usepackage{hyperref}
+\usepackage{url}
+
+\setlength{\oddsidemargin}{0in}  
+\setlength{\textwidth}{6.5in}  
+\setlength{\textheight}{8.8in}  
+\setlength{\topmargin}{0in}  
+\setlength{\headheight}{0in}  
+\setlength{\headsep}{0in} 
+\renewcommand{\thesubsection}{(\alph{subsection})}
+
+
+
+\begin{document}
+%\bibliographystyle{plain}
+%\pagestyle{fancy}
+%\fancyhead[L,C]{} %could be RO for right 
+%\fancyhead[R]{}
+\pagenumbering{roman}
+
+
+\section*{Facilities, Equipment and Other Resources}
+
+\subsection{Facilities}
+The Department of Computer Science and Engineering provides space for faculty and research supported graduate students. There is computer systems administration support provided by the department.
+\subsection{Equipment}
+Computers and connectivity are provided for the PI and graduate students.
+\subsection{Other Resources}
+There is significant forensics data in handwriting, footwear impressions and fingerprints available from previous support by the NIJ. The PI is currently serving on NIST/NIJ panel on human factors in handwriting analysis which provides  a valuable connection to the forensics practitioner community.
+
+%\footnotesize Proposals must include a supplementary document of no more than two pages labeled “Data Management Plan”. This supplement should describe how the proposal will conform to NSF policy on the dissemination and sharing of research results (see AAG Chapter VI.D.4), and may include:
+%
+%    the types of data, samples, physical collections, software, curriculum materials, and other materials to be produced in the course of the project;
+%
+%    the standards to be used for data and metadata format and content (where existing standards are absent or deemed inadequate, this should be documented along with any proposed solutions or remedies);
+%
+%    policies for access and sharing including provisions for appropriate protection of privacy, confidentiality, security, intellectual property, or other rights or requirements;
+%
+%    policies and provisions for re-use, re-distribution, and the production of derivatives; and
+%
+%    plans for archiving data, samples, and other research products, and for preservation of access to them.
+%
+%Data management requirements and plans specific to the Directorate, Office, Division, Program, or other NSF unit, relevant to a proposal are available at: http://www.nsf.gov/bfa/dias/policy/dmp.jsp. If guidance specific to the program is not available, then the requirements established in this section apply.
+%
+%Simultaneously submitted collaborative proposals and proposals that include subawards are a single unified project and should include only one supplemental combined Data Management Plan, regardless of the number of non-lead collaborative proposals or subawards included. Fastlane will not permit submission of a proposal that is missing a Data Management Plan. Proposals for supplementary support to an existing award are not required to include a Data Management Plan.
+%
+%A valid Data Management Plan may include only the statement that no detailed plan is needed, as long as the statement is accompanied by a clear justification. Proposers who feel that the plan cannot fit within the supplement limit of two pages may use part of the 15-page Project Description for additional data management information. Proposers are advised that the Data Management Plan may not be used to circumvent the 15-page Project Description limitation. The Data Management Plan will be reviewed as an integral part of the proposal, coming under Intellectual Merit or Broader Impacts or both, as appropriate for the scientific community of relevance.  
+ 
+\end{document}

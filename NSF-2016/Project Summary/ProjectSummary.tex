@@ -1,0 +1,76 @@
+ %  article.tex (Version 2.81, released 24 September 2003)
+%  Article to demonstrate format for SPIE Proceedings
+%  Special instructions are included in this file after the
+%  symbol %>>>>
+%  Numerous commands are commented out, but included to show how
+%  to effect various options, e.g., to print page numbers, etc.
+%  This LaTeX source file is composed for LaTeX2e, 
+%  not the older LaTeX version 2.09, as previous versions were.
+
+%  The following commands have been added in the SPIE class 
+%  file (spie.cls) and will not be understood in other classes:
+%  \supit{}, \authorinfo{}, \skiplinehalf, \keywords{}
+%  The bibliography style file is called spiebib.bst, 
+%  which replaces the standard style unstr.bst.  
+
+\documentclass[11pt, singlespacing]{article}  %>>> use for US letter paper
+%%\documentclass[a4paper]{spie}  %>>> use this instead for A4 paper
+%% \addtolength{\voffset}{9mm}   %>>> moves text field down
+
+%  The following command loads a graphics package to include images 
+%  in the document. It may be necessary to specify a DVI driver option,
+%  e.g., [dvips], but that may be inappropriate for some LaTeX 
+%  installations. 
+%\usepackage[]{graphicx}
+%\usepackage{subfigure}
+\usepackage{epsfig}
+\usepackage{subfigure}
+%%\usepackage{times}
+%%\usepackage{amssymb,amsmath,amsthm}
+%\usepackage[usenames]{color}
+\usepackage{graphicx}
+%\usepackage{floatflt}
+%\usepackage{amsmath}
+%
+\usepackage{setspace} %for double spacing and single spacing the document
+%\usepackage{amstex}
+\usepackage{amsmath}
+
+\setlength{\oddsidemargin}{0in}  
+\setlength{\textwidth}{6.5in}  
+\setlength{\textheight}{8.8in}  
+\setlength{\topmargin}{0in}  
+\setlength{\headheight}{0in}  
+\setlength{\headsep}{0in} 
+
+
+
+\begin{document}
+%\bibliographystyle{plain}
+%\pagestyle{fancy}
+%\fancyhead[L,C]{} %could be RO for right 
+%\fancyhead[R]{}
+\pagenumbering{roman}
+
+
+\section*{Small: Deep Learning in Forensic Handwriting Comparison}
+\begin{verbatim}
+Sargur N. Srihari, University at Buffalo, The State University of New York
+\end{verbatim}
+%\singlespace
+\subsection*{Project Summary}
+A common task in forensic document examination is  handwriting comparison. The human expert performs side-by-side comparison of the evidence (handwriting of unknown origin) and  known (handwriting of known writership). The outcome is a statement of whether the two had the same source, had different sources or whether there is insufficient information. Today the task is largely done by human experts who use specialized perceptual training and years of experience performing the task.
+More recently it has become necessary to characterize uncertainty of the conclusion, e.g.,  in the form of a likelihood ratio (LR)-- the ratio of joint probability of evidence and known under two alternative hypotheses(same/different).  Such quantitive characterizations are impractical without usinr automated methods of comparison. But previously developed automation methods use human-engineered feature extraction algorithms and  their performance falls short of human expert performance. 
+
+In this research we propose to develop more powerful automated approaches to handwriting comparison that learn features from the data. The necessary likelihood ratios are computed as a byproduct. The methods are based on deep learning-- a machine learning approach based on neural networks-- that has shown spectacular results in many tasks such as speech recognition, computer vision, natural language processing and recommendation systems.
+
+The  proposed architecture will consist of an autoencoder to learn the internal representation. Convolutional network architectures will be modified and evaluated, e.g.,  separate networks for known and evidence with shared weights which are combined at later stages, nonlinear activation functions suitable for LR computation, (ReLU  and probit), regularization using data augmentation, etc. Experiments with several handwriting  data consisting of words, sentences, paragraphs and full pages are proposed.
+\subsection*{Intellectual Merit}
+Three new concepts are to be explored: (i) deep neural networks for forensic comparison (evidence and known), (ii)  compute a measure of uncertainty in forensic comparison,  and (iii) obtaining a single probabilistic opinion using several comparisons. 
+\subsection*{Broader Impact}
+The forensic sciences are at a crisis mode at present- with methods based on human expertise being routinely questioned for their scientific basis.  Proposed deep learning methods are a  potential break-through and may benefit several  forensic domains.
+\subsection*{Key Words}
+Breakthrough; deep learning; neural networks; forensic analysis; impression evidence; likelihood ratio
+ 
+ 
+\end{document}
